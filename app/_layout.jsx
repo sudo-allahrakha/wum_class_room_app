@@ -23,7 +23,9 @@ export default function RootLayout() {
     return null;
   }
 
-  return(<ApplicationProvider {...eva} theme={eva.light}>
-    <Stack />
-  </ApplicationProvider>)
+  return(
+    <ApplicationProvider {...eva} theme={eva.light}>
+      <Stack screenOptions={{ headerShown: false }} />
+    </ApplicationProvider>
+  )
 }
